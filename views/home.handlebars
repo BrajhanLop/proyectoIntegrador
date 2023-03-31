@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="d-flex flex-column justify-content-center align-items-center w-100 ">
+        <h2>Guardar Usuarios</h2>
+        <form class="w-50 mt-3" id="formUser">
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example1" name="nombre" class="form-control" />
+                        <label class="form-label" for="form6Example1">First name</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-outline">
+                        <input type="text" id="form6Example2" name="apellido" class="form-control" />
+                        <label class="form-label" for="form6Example2">Last name</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-outline mb-4">
+                <input type="text" id="form6Example3" name="compania" class="form-control" />
+                <label class="form-label" for="form6Example3">Company name</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block mb-4">Guardar</button>
+        </form>
+    </div>
+</div>
+<h2>Listado</h2>
+
+<div id="listado">
+    {{#if hayusers}}
+    <ul>
+        {{#each users}}
+        <li>Nombre: {{this.nombre}} | apellido: {{this.apellido}} | Company: {{this.compania}}</li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>no hay usuarios para mostrar</p>
+    {{/if}}
+</div>

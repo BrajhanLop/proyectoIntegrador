@@ -1,0 +1,12 @@
+<h1>Usuarios</h1>
+<div id="listado">
+    {{#if hayVideojuegos}}
+    <ul>
+        {{#each videojuegos}}
+        <li>Nombre: {{this.nombre}} | apellido: {{this.apellido}} | Company: {{this.compania}}</li>
+        {{/each}}
+    </ul>
+    {{else}}
+    <p>no hay usuarios para mostrar</p>
+    {{/if}}
+</div>

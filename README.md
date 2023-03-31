@@ -1,0 +1,5 @@
+- clases
+- Exprexx request y response
+- Router y Multer
+- Handlebars
+- Mongodb y mongoose
